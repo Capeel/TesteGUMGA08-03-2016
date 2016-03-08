@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <title>Tabuada</title>
+        <meta charset="UTF-8">
+        <script src="tabuadaController.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <form style="margin-top: 30px;">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label>Numero Desejado: </label>
+                            <input type="text"  class="form-control" ng-model="numero" placeholder="Escreva um número">
+                            
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="col-md-offset-5">
+                                <button class="btn btn-info" ng-click="enviar()">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1>{{numero.retornaTabuada}}</h1>
+                    </div>
+                </div>   
+            </form>          
+        </div>
+    </body>
+</html>
